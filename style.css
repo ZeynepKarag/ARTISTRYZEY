@@ -1,0 +1,322 @@
+/* For at nulstille alt */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+}
+
+/* ARTISTRYZEY logoet med HTML skrift */
+.logo {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  margin-left: 3%;
+  margin-top: 20px;
+  font-family: Helvetica;
+  color: black;
+  cursor: pointer;
+}
+
+/*
+.logo {
+  position: absolute;
+  padding: 3px;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+}
+*/
+
+/* Menubar knapper*/
+ul {
+  width: auto;
+  float: right;
+  margin-top: 20px;
+  font-family: Helvetica;
+  cursor: pointer;
+  margin-right: 3%;
+}
+/*Menubar knapper*/
+li {
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+/* Menuknapper før de bliver hoveret over*/
+a {
+  /*text-align: center;*/
+  color: gray;
+  text-decoration: none;
+}
+
+/*Når man kører musen hen over menu knappen*/
+li a:hover:not(.active) {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* Når man har trykket på menu knappen, og er inde på den given side*/
+.active {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.splitscreen {
+  display: flex;
+}
+.splitscreen .left {
+  flex: 1;
+}
+.bigpic {
+  width: 100vh;
+}
+
+.portrait {
+  width: 50vh;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.splitscreen .right {
+  flex: 1;
+}
+
+.row,
+.luft,
+.kontaktside1,
+.right {
+  margin: 0px 80px;
+}
+
+.luft2 {
+  margin: 0px 500px 0 px 80 px;
+}
+
+.tilbageknap {
+  border: 2px solid black;
+  background: transparent;
+  width: 100px;
+  height: 30px;
+  font-family: Helvetica, sans-serif;
+  margin: 0px 80px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Hver side's emne, fx OM MIG eller KONTAKT*/
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+/* Diverse overskrifter*/
+h3,
+h4,
+.normal {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  color: black;
+  padding-bottom: 2%;
+}
+
+.øvreluft {
+  margin-top: 60px;
+}
+
+.downloadartistryzeyvideo {
+  margin-bottom: 200px;
+}
+
+h5 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 1%;
+  font-size: 18px;
+}
+
+.undtagelse {
+  padding-bottom: 2%;
+}
+/* Diverse brødtekst og placeholder tekst*/
+p,
+::placeholder {
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  color: grey;
+  padding-bottom: 3%;
+  line-height: 1.5;
+}
+
+.downloadikon {
+  width: 50px;
+  cursor: pointer;
+}
+.kontaktformularside1 {
+  position: absolute;
+}
+
+/* Juster størrelsen inde på CSS, ligenu er der brugt HTML til at justere størrelsen */
+.forsidevideo {
+  margin: 130px 50px;
+}
+
+/* Projekter side - Malerier */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+}
+
+/* 4 lige columns som sidder ved siden af hinanden */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 8px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* PROJEKTER > CPH BUSINESS ACADEMY */
+.row1 {
+  display: flex;
+}
+
+.column2 {
+  flex: 18%;
+  padding: 5%;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.videoer {
+  margin: 0px 80px;
+}
+
+/* PROJEKTER SIDEN */
+
+/* container brugt til at positionere knappen */
+.container {
+  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+/* Gør det responsivt */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style knappen og placer i midten af billedet*/
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  font-weight: bold;
+}
+
+/*
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  background: white;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  /*display: flex;*/ /*
+  overflow: hidden;
+}
+
+.slide {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  animation: slideshow 10s linear infinite;
+}
+
+.slide img {
+  height: 500px;
+  padding: 0 30 px 0 30px;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider::before,
+.slider::after {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 225, 225, 0) 100%);
+}*/
+
+/* Responsive layout - laver et layout med 2 istedet for 4 */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - får de to columns til at stacke ovenpå hinanden istedet for ved siden af hinanden */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}

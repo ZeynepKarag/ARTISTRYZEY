@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href=""> Find din Helvetica Neue font og indsæt her-->
+    <link rel="stylesheet" href="style.css" />
+    <title>ARTISTRYZEY</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><span>ARTISTRYZEY</span></h1>
+      </div>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">HJEM</a></li>
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a class="active" href="projekter.html">PROJEKTER</a></li>
+          <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="tilbageknap" onclick="goBack()">TILBAGE</button>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+    <h2 class="luft">VIDEOGRAFI</h2>
+
+    <div class="videoer">
+      <h4>LUBECK VIDEO</h4>
+      <p>
+        2016 <br />
+        Folkeskole tur til Lübeck, Tyskland. Filmet med iPhone 6s.
+      </p>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/QqpVQlVE2oA"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <h4 class="øvreluft">ARTISTRYZEY VIDEO</h4>
+      <p>
+        2020 <br />
+        Introduktion video af Zeynep Karagöz, kom om bag kulisserne og lær mig
+        bedre at kende. <br />
+        Tryk på ikon for at downloade dokumentation og udviklingsprocessen af
+        ARTISTRYZEY videoen.
+        <br />
+        – „fortælle historien om sin egen tilblivelse”.
+      </p>
+
+      <a
+        href="artistryzeyvideo.pdf"
+        download="ARTISTRYZEYVIDEO"
+        target="_blank"
+      >
+        <div class="ARTISTRYZEYVIDEO">
+          <img
+            class="downloadikon"
+            src="img/downicon.png"
+            alt="ARTISTRYZEYVIDEO"
+          />
+        </div>
+      </a>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/bHRv-EIuKJ8"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href=""> Find din Helvetica Neue font og indsæt her-->
+    <link rel="stylesheet" href="style.css" />
+    <title>ARTISTRYZEY</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1><span>ARTISTRYZEY</span></h1>
+      </div>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">HJEM</a></li>
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="projekter.html">PROJEKTER</a></li>
+          <li><a class="active" href="kontakt.html">KONTAKT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <button class="tilbageknap" onclick="goBack()">TILBAGE</button>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+    <div class="luft">
+      <h2>TAK FOR DIN HENVENDELSE!</h2>
+      <p>Jeg vender tilbage til dig hurtigst muligt.</p>
+      <!-- Find et kryds (X) ikon, og lav en kasse til p tagget, så når man trykker på X 
+    kan man vende tilbage til HJEM siden -->
+    </div>
+  </body>
+</html>
